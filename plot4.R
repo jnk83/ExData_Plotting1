@@ -11,7 +11,7 @@ subdata <- subset(data, Date >= "2007-02-01" & Date <= "2007-02-02")
 remove(data)
 
 ## change margins and mfrow
-par(mar = c(2, 4, 2, 2), mfrow = c(2,2))
+par(mar = c(4, 4, 3, 2), mfrow = c(2,2))
 
 ## Plot four(a) - global active power plot with line
 with(subdata, plot(Time, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
